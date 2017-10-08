@@ -2,8 +2,11 @@
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --color --open",
-    "deploy": "webpack -p",
+    "start": "npm run clean && webpack-dev-server --hot --inline --color --open",
+    "build": "webpack -p",
+    "clean": "rm -rf ./dist",
+    "deploy":
+      "npm run build && git add ./dist ./index.html ./manifest.json && git commit -m  'Deployed to site.' && git push origin master",
     "watch": "webpack -w --colors",
     "flow": "flow",
     "test": "jest"
@@ -21,9 +24,10 @@
     "babel-core": "^6.23.1",
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
-    "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.7",
     "exports-loader": "^0.6.4",
     "expose-loader": "^0.7.3",
