@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+
+.t3 {
+  border-radius: 4px;
+  height: 16rem;
+  width: 300px;
+  padding: 12px;
+  background: white;
+}
+
+.t3-span {
+  text-align: center;
+}
+
+.t3-board {
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 12rem;
+}
+
+.t3-board > div {
+  border-radius: 4%;
+  height: 3rem;
+  width: 3rem;
+  margin: 0.2rem;
+  background-color: slategray;
+}
+
+.t3-board > .t3-blue {
+  background-color: $claret;
+}
+
+.t3-board > .t3-red {
+  background-color: $jet;
+}
+
+.t3-btn {
+  border-radius: 2px;
+  padding: 0.5rem;
+  background-color: $jet;
+  color: slategray;
+}

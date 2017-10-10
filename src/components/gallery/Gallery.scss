@@ -1,0 +1,31 @@
+.gallery {
+  border-radius: 4px;
+  max-width: 50rem;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+  & > div {
+    margin: 0.5rem;
+
+    & > p {
+      text-align: center;
+    }
+
+    & > .gal-display {
+      width: 100%;
+    }
+
+    & > .gal-thumb {
+      box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+      max-height: 10rem;
+    }
+  }
+
+  .gal-span {
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -5,7 +5,7 @@ import "prop-types"
 import React from "react"
 import reactDOM from "react-dom"
 import App from "./components/app/App"
-import "./index.css"
+import "./index.scss"
 
 // Register service worker
 if ("serviceWorker" in navigator && navigator.serviceWorker !== undefined) {

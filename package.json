@@ -5,8 +5,7 @@
     "start": "npm run clean && webpack-dev-server --hot --inline --color --open",
     "build": "webpack -p",
     "clean": "rm -rf ./dist",
-    "deploy":
-      "npm run build && git add ./dist ./index.html ./manifest.json && git commit -m  'Deployed to site.' && git push origin master",
+    "deploy": "npm run build && git add ./dist ./index.html ./manifest.json && git commit -m  'Deployed to site.' && git push origin master",
     "watch": "webpack -w --colors",
     "flow": "flow",
     "test": "jest"
@@ -14,6 +13,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
+    "pixi.js": "^4.5.6",
     "popper.js": "^1.12.3",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",

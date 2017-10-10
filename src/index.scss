@@ -1,0 +1,44 @@
+@import "./styles/colors";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: Raleway, "Sans Serif";
+  z-index: -999;
+  background-color: #121140;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  .title {
+    padding: 0;
+    margin: 0;
+    font-family: Modak, cursive;
+    font-size: 310px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    padding: 12px;
+    font-size: 50px;
+
+    &:hover {
+      color: orange;
+    }
+  }
+}
